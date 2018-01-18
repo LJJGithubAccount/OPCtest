@@ -1,0 +1,2218 @@
+Test run started.
+Updated endpoint from the discovery endpoint.
+Fetched all endpoints supported by the server.
+Starting test for Endpoint. opc.tcp/None/None/Binary
+Creating new Session with URL = opc.tcp://localhost:1235/ServerCmd
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 11:51:09 for opc.tcp/None/None/Binary ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+6 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+9 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15163ms) at 11:51:24 for opc.tcp/None/None/Binary ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 11:51:24 for opc.tcp/None/None/Binary ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (2556ms) at 11:51:26 for opc.tcp/None/None/Binary ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 11:51:26 for opc.tcp/None/None/Binary ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (4731ms) at 11:51:31 for opc.tcp/None/None/Binary ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 11:51:31 for opc.tcp/None/None/Binary ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (1508ms) at 11:51:33 for opc.tcp/None/None/Binary ==========
+
+========== Browse.NodeClass Test Started Run #1 at 11:51:33 for opc.tcp/None/None/Binary ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (2894ms) at 11:51:35 for opc.tcp/None/None/Binary ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 11:51:35 for opc.tcp/None/None/Binary ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (4960ms) at 11:51:40 for opc.tcp/None/None/Binary ==========
+
+========== Read.Attributes Test Started Run #1 at 11:51:40 for opc.tcp/None/None/Binary ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (436ms) at 11:51:41 for opc.tcp/None/None/Binary ==========
+
+========== Read.IndexRanges Test Started Run #1 at 11:51:41 for opc.tcp/None/None/Binary ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (34ms) at 11:51:41 for opc.tcp/None/None/Binary ==========
+
+========== Read.DataEncodings Test Started Run #1 at 11:51:41 for opc.tcp/None/None/Binary ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (640ms) at 11:51:42 for opc.tcp/None/None/Binary ==========
+
+========== Read.ReadWrite Test Started Run #1 at 11:51:42 for opc.tcp/None/None/Binary ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (1079ms) at 11:51:43 for opc.tcp/None/None/Binary ==========
+
+========== Write.RandomValues Test Started Run #1 at 11:51:43 for opc.tcp/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (29ms) at 11:51:43 for opc.tcp/None/None/Binary ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 11:51:43 for opc.tcp/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (30ms) at 11:51:43 for opc.tcp/None/None/Binary ==========
+
+========== Call.MethodTest Test Started Run #1 at 11:51:43 for opc.tcp/None/None/Binary ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (178ms) at 11:51:43 for opc.tcp/None/None/Binary ==========
+
+========== Call.Errors Test Started Run #1 at 11:51:43 for opc.tcp/None/None/Binary ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (243ms) at 11:51:43 for opc.tcp/None/None/Binary ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 11:51:43 for opc.tcp/None/None/Binary ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (541ms) at 11:51:44 for opc.tcp/None/None/Binary ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 11:51:44 for opc.tcp/None/None/Binary ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (4049ms) at 11:51:48 for opc.tcp/None/None/Binary ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 11:51:48 for opc.tcp/None/None/Binary ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+5 publish responses received. Publishing Enabled = True
+15 publish responses received. Publishing Enabled = False
+21 publish responses received. Publishing Enabled = True
+28 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31128ms) at 11:52:19 for opc.tcp/None/None/Binary ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 11:52:19 for opc.tcp/None/None/Binary ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+30 publish responses received. Publishing Interval = 1000
+40 publish responses received. Publishing Interval = 2000
+62 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31115ms) at 11:52:50 for opc.tcp/None/None/Binary ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 11:52:50 for opc.tcp/None/None/Binary ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83252ms) at 11:54:13 for opc.tcp/None/None/Binary ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 11:54:13 for opc.tcp/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (35ms) at 11:54:13 for opc.tcp/None/None/Binary ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 11:54:13 for opc.tcp/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (40ms) at 11:54:13 for opc.tcp/None/None/Binary ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 11:54:13 for opc.tcp/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (38ms) at 11:54:13 for opc.tcp/None/None/Binary ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 11:54:13 for opc.tcp/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (52ms) at 11:54:13 for opc.tcp/None/None/Binary ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 11:54:13 for opc.tcp/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (61ms) at 11:54:13 for opc.tcp/None/None/Binary ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 11:54:13 for opc.tcp/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (37ms) at 11:54:14 for opc.tcp/None/None/Binary ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 185277ms.
+Completed test for Endpoint. opc.tcp/None/None/Binary
+
+Starting test for Endpoint. opc.tcp/Sign/Basic256Sha256/Binary
+Creating new Session with URL = opc.tcp://localhost:1235/ServerCmd
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 11:54:14 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+5 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+9 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15131ms) at 11:54:29 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 11:54:29 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (2728ms) at 11:54:32 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 11:54:32 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (5288ms) at 11:54:37 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 11:54:37 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (1620ms) at 11:54:39 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.NodeClass Test Started Run #1 at 11:54:39 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (3276ms) at 11:54:42 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 11:54:42 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (5588ms) at 11:54:48 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Read.Attributes Test Started Run #1 at 11:54:48 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (492ms) at 11:54:48 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Read.IndexRanges Test Started Run #1 at 11:54:48 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (45ms) at 11:54:48 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Read.DataEncodings Test Started Run #1 at 11:54:48 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (833ms) at 11:54:49 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Read.ReadWrite Test Started Run #1 at 11:54:49 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (1255ms) at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Write.RandomValues Test Started Run #1 at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (29ms) at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (54ms) at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Call.MethodTest Test Started Run #1 at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (229ms) at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Call.Errors Test Started Run #1 at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (278ms) at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 11:54:51 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (619ms) at 11:54:52 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 11:54:52 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (4180ms) at 11:54:56 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 11:54:56 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+7 publish responses received. Publishing Enabled = True
+15 publish responses received. Publishing Enabled = False
+24 publish responses received. Publishing Enabled = True
+29 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31194ms) at 11:55:27 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 11:55:27 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+30 publish responses received. Publishing Interval = 1000
+40 publish responses received. Publishing Interval = 2000
+62 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31115ms) at 11:55:58 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 11:55:58 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83301ms) at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (67ms) at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (69ms) at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (60ms) at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (54ms) at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (64ms) at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (52ms) at 11:57:22 for opc.tcp/Sign/Basic256Sha256/Binary ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 188480ms.
+Completed test for Endpoint. opc.tcp/Sign/Basic256Sha256/Binary
+
+Starting test for Endpoint. opc.tcp/SignAndEncrypt/Basic256Sha256/Binary
+Creating new Session with URL = opc.tcp://localhost:1235/ServerCmd
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 11:57:23 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+6 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+9 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15122ms) at 11:57:38 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 11:57:38 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (3068ms) at 11:57:41 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 11:57:41 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (5683ms) at 11:57:47 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 11:57:47 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (1786ms) at 11:57:48 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.NodeClass Test Started Run #1 at 11:57:48 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (3395ms) at 11:57:52 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 11:57:52 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (5865ms) at 11:57:58 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Read.Attributes Test Started Run #1 at 11:57:58 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (570ms) at 11:57:58 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Read.IndexRanges Test Started Run #1 at 11:57:58 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (58ms) at 11:57:58 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Read.DataEncodings Test Started Run #1 at 11:57:58 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (1019ms) at 11:57:59 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Read.ReadWrite Test Started Run #1 at 11:57:59 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (1613ms) at 11:58:01 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Write.RandomValues Test Started Run #1 at 11:58:01 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (74ms) at 11:58:01 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 11:58:01 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (71ms) at 11:58:01 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Call.MethodTest Test Started Run #1 at 11:58:01 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (259ms) at 11:58:01 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Call.Errors Test Started Run #1 at 11:58:01 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (358ms) at 11:58:02 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 11:58:02 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (632ms) at 11:58:02 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 11:58:02 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (4293ms) at 11:58:07 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 11:58:07 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+5 publish responses received. Publishing Enabled = True
+17 publish responses received. Publishing Enabled = False
+24 publish responses received. Publishing Enabled = True
+29 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31205ms) at 11:58:38 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 11:58:38 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+32 publish responses received. Publishing Interval = 1000
+41 publish responses received. Publishing Interval = 2000
+63 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31141ms) at 11:59:09 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 11:59:09 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83405ms) at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (66ms) at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (65ms) at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (46ms) at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (83ms) at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (58ms) at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (76ms) at 12:00:33 for opc.tcp/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 190974ms.
+Completed test for Endpoint. opc.tcp/SignAndEncrypt/Basic256Sha256/Binary
+
+Starting test for Endpoint. http/None/None/Binary
+Creating new Session with URL = http://192.168.10.211:1234/ServerCmd
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 12:00:34 for http/None/None/Binary ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+6 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+10 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15182ms) at 12:00:49 for http/None/None/Binary ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 12:00:49 for http/None/None/Binary ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (5459ms) at 12:00:54 for http/None/None/Binary ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 12:00:54 for http/None/None/Binary ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (11602ms) at 12:01:06 for http/None/None/Binary ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 12:01:06 for http/None/None/Binary ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (3562ms) at 12:01:10 for http/None/None/Binary ==========
+
+========== Browse.NodeClass Test Started Run #1 at 12:01:10 for http/None/None/Binary ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (7086ms) at 12:01:17 for http/None/None/Binary ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 12:01:17 for http/None/None/Binary ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (11579ms) at 12:01:28 for http/None/None/Binary ==========
+
+========== Read.Attributes Test Started Run #1 at 12:01:28 for http/None/None/Binary ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (493ms) at 12:01:29 for http/None/None/Binary ==========
+
+========== Read.IndexRanges Test Started Run #1 at 12:01:29 for http/None/None/Binary ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (66ms) at 12:01:29 for http/None/None/Binary ==========
+
+========== Read.DataEncodings Test Started Run #1 at 12:01:29 for http/None/None/Binary ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (740ms) at 12:01:30 for http/None/None/Binary ==========
+
+========== Read.ReadWrite Test Started Run #1 at 12:01:30 for http/None/None/Binary ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (1255ms) at 12:01:31 for http/None/None/Binary ==========
+
+========== Write.RandomValues Test Started Run #1 at 12:01:31 for http/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (99ms) at 12:01:31 for http/None/None/Binary ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 12:01:31 for http/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (108ms) at 12:01:31 for http/None/None/Binary ==========
+
+========== Call.MethodTest Test Started Run #1 at 12:01:31 for http/None/None/Binary ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (448ms) at 12:01:32 for http/None/None/Binary ==========
+
+========== Call.Errors Test Started Run #1 at 12:01:32 for http/None/None/Binary ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (455ms) at 12:01:32 for http/None/None/Binary ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 12:01:32 for http/None/None/Binary ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (592ms) at 12:01:33 for http/None/None/Binary ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 12:01:33 for http/None/None/Binary ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (4175ms) at 12:01:37 for http/None/None/Binary ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 12:01:37 for http/None/None/Binary ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+5 publish responses received. Publishing Enabled = True
+15 publish responses received. Publishing Enabled = False
+24 publish responses received. Publishing Enabled = True
+29 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31167ms) at 12:02:08 for http/None/None/Binary ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 12:02:08 for http/None/None/Binary ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+30 publish responses received. Publishing Interval = 1000
+40 publish responses received. Publishing Interval = 2000
+63 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31151ms) at 12:02:39 for http/None/None/Binary ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 12:02:39 for http/None/None/Binary ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83427ms) at 12:04:03 for http/None/None/Binary ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 12:04:03 for http/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (85ms) at 12:04:03 for http/None/None/Binary ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 12:04:03 for http/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (70ms) at 12:04:03 for http/None/None/Binary ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 12:04:03 for http/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (124ms) at 12:04:03 for http/None/None/Binary ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 12:04:03 for http/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (77ms) at 12:04:03 for http/None/None/Binary ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 12:04:03 for http/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (71ms) at 12:04:03 for http/None/None/Binary ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 12:04:03 for http/None/None/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (89ms) at 12:04:03 for http/None/None/Binary ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 210127ms.
+Completed test for Endpoint. http/None/None/Binary
+
+Starting test for Endpoint. http/None/None/XML
+Creating new Session with URL = http://192.168.10.211:1234/ServerCmd
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 12:04:04 for http/None/None/XML ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+6 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+10 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15352ms) at 12:04:20 for http/None/None/XML ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 12:04:20 for http/None/None/XML ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (9429ms) at 12:04:29 for http/None/None/XML ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 12:04:29 for http/None/None/XML ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (12780ms) at 12:04:42 for http/None/None/XML ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 12:04:42 for http/None/None/XML ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (3525ms) at 12:04:45 for http/None/None/XML ==========
+
+========== Browse.NodeClass Test Started Run #1 at 12:04:45 for http/None/None/XML ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (7662ms) at 12:04:53 for http/None/None/XML ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 12:04:53 for http/None/None/XML ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (12767ms) at 12:05:06 for http/None/None/XML ==========
+
+========== Read.Attributes Test Started Run #1 at 12:05:06 for http/None/None/XML ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (1681ms) at 12:05:08 for http/None/None/XML ==========
+
+========== Read.IndexRanges Test Started Run #1 at 12:05:08 for http/None/None/XML ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (92ms) at 12:05:08 for http/None/None/XML ==========
+
+========== Read.DataEncodings Test Started Run #1 at 12:05:08 for http/None/None/XML ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (2827ms) at 12:05:11 for http/None/None/XML ==========
+
+========== Read.ReadWrite Test Started Run #1 at 12:05:11 for http/None/None/XML ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (6659ms) at 12:05:17 for http/None/None/XML ==========
+
+========== Write.RandomValues Test Started Run #1 at 12:05:17 for http/None/None/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (75ms) at 12:05:17 for http/None/None/XML ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 12:05:17 for http/None/None/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (73ms) at 12:05:17 for http/None/None/XML ==========
+
+========== Call.MethodTest Test Started Run #1 at 12:05:17 for http/None/None/XML ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (454ms) at 12:05:18 for http/None/None/XML ==========
+
+========== Call.Errors Test Started Run #1 at 12:05:18 for http/None/None/XML ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (774ms) at 12:05:19 for http/None/None/XML ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 12:05:19 for http/None/None/XML ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (688ms) at 12:05:19 for http/None/None/XML ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 12:05:19 for http/None/None/XML ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (4703ms) at 12:05:24 for http/None/None/XML ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 12:05:24 for http/None/None/XML ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+6 publish responses received. Publishing Enabled = True
+17 publish responses received. Publishing Enabled = False
+24 publish responses received. Publishing Enabled = True
+29 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31281ms) at 12:05:55 for http/None/None/XML ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 12:05:55 for http/None/None/XML ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+32 publish responses received. Publishing Interval = 1000
+40 publish responses received. Publishing Interval = 2000
+64 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31220ms) at 12:06:27 for http/None/None/XML ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 12:06:27 for http/None/None/XML ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83442ms) at 12:07:50 for http/None/None/XML ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 12:07:50 for http/None/None/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (93ms) at 12:07:50 for http/None/None/XML ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 12:07:50 for http/None/None/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (88ms) at 12:07:50 for http/None/None/XML ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 12:07:50 for http/None/None/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (104ms) at 12:07:51 for http/None/None/XML ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 12:07:51 for http/None/None/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (73ms) at 12:07:51 for http/None/None/XML ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 12:07:51 for http/None/None/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (88ms) at 12:07:51 for http/None/None/XML ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 12:07:51 for http/None/None/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (99ms) at 12:07:51 for http/None/None/XML ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 227605ms.
+Completed test for Endpoint. http/None/None/XML
+
+Starting test for Endpoint. http/Sign/Basic256Sha256/Binary
+Creating new Session with URL = http://192.168.10.211:1234/ServerCmd/Basic256Sha256
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 12:07:52 for http/Sign/Basic256Sha256/Binary ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+7 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+10 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15380ms) at 12:08:07 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 12:08:07 for http/Sign/Basic256Sha256/Binary ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (11806ms) at 12:08:19 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 12:08:19 for http/Sign/Basic256Sha256/Binary ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (24470ms) at 12:08:44 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 12:08:44 for http/Sign/Basic256Sha256/Binary ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (6340ms) at 12:08:50 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.NodeClass Test Started Run #1 at 12:08:50 for http/Sign/Basic256Sha256/Binary ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (13254ms) at 12:09:03 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 12:09:03 for http/Sign/Basic256Sha256/Binary ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (24274ms) at 12:09:28 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Read.Attributes Test Started Run #1 at 12:09:28 for http/Sign/Basic256Sha256/Binary ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (665ms) at 12:09:28 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Read.IndexRanges Test Started Run #1 at 12:09:28 for http/Sign/Basic256Sha256/Binary ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (83ms) at 12:09:28 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Read.DataEncodings Test Started Run #1 at 12:09:28 for http/Sign/Basic256Sha256/Binary ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (1053ms) at 12:09:29 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Read.ReadWrite Test Started Run #1 at 12:09:29 for http/Sign/Basic256Sha256/Binary ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (1559ms) at 12:09:31 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Write.RandomValues Test Started Run #1 at 12:09:31 for http/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (79ms) at 12:09:31 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 12:09:31 for http/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (113ms) at 12:09:31 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Call.MethodTest Test Started Run #1 at 12:09:31 for http/Sign/Basic256Sha256/Binary ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (755ms) at 12:09:32 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Call.Errors Test Started Run #1 at 12:09:32 for http/Sign/Basic256Sha256/Binary ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (1034ms) at 12:09:33 for http/Sign/Basic256Sha256/Binary ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 12:09:33 for http/Sign/Basic256Sha256/Binary ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (685ms) at 12:09:34 for http/Sign/Basic256Sha256/Binary ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 12:09:34 for http/Sign/Basic256Sha256/Binary ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (4520ms) at 12:09:38 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 12:09:38 for http/Sign/Basic256Sha256/Binary ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+6 publish responses received. Publishing Enabled = True
+17 publish responses received. Publishing Enabled = False
+24 publish responses received. Publishing Enabled = True
+29 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31245ms) at 12:10:09 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 12:10:09 for http/Sign/Basic256Sha256/Binary ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+30 publish responses received. Publishing Interval = 1000
+40 publish responses received. Publishing Interval = 2000
+63 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31217ms) at 12:10:41 for http/Sign/Basic256Sha256/Binary ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 12:10:41 for http/Sign/Basic256Sha256/Binary ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83384ms) at 12:12:04 for http/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 12:12:04 for http/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (155ms) at 12:12:04 for http/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 12:12:04 for http/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (94ms) at 12:12:04 for http/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 12:12:04 for http/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (72ms) at 12:12:04 for http/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 12:12:05 for http/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (88ms) at 12:12:05 for http/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 12:12:05 for http/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (106ms) at 12:12:05 for http/Sign/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 12:12:05 for http/Sign/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (109ms) at 12:12:05 for http/Sign/Basic256Sha256/Binary ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 253841ms.
+Completed test for Endpoint. http/Sign/Basic256Sha256/Binary
+
+Starting test for Endpoint. http/Sign/Basic256Sha256/XML
+Creating new Session with URL = http://192.168.10.211:1234/ServerCmd/Basic256Sha256
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 12:12:06 for http/Sign/Basic256Sha256/XML ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+7 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+9 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15385ms) at 12:12:22 for http/Sign/Basic256Sha256/XML ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 12:12:22 for http/Sign/Basic256Sha256/XML ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (15615ms) at 12:12:37 for http/Sign/Basic256Sha256/XML ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 12:12:37 for http/Sign/Basic256Sha256/XML ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (28759ms) at 12:13:06 for http/Sign/Basic256Sha256/XML ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 12:13:06 for http/Sign/Basic256Sha256/XML ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (8307ms) at 12:13:14 for http/Sign/Basic256Sha256/XML ==========
+
+========== Browse.NodeClass Test Started Run #1 at 12:13:14 for http/Sign/Basic256Sha256/XML ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (16985ms) at 12:13:31 for http/Sign/Basic256Sha256/XML ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 12:13:31 for http/Sign/Basic256Sha256/XML ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (30811ms) at 12:14:02 for http/Sign/Basic256Sha256/XML ==========
+
+========== Read.Attributes Test Started Run #1 at 12:14:02 for http/Sign/Basic256Sha256/XML ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (3241ms) at 12:14:05 for http/Sign/Basic256Sha256/XML ==========
+
+========== Read.IndexRanges Test Started Run #1 at 12:14:06 for http/Sign/Basic256Sha256/XML ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (173ms) at 12:14:06 for http/Sign/Basic256Sha256/XML ==========
+
+========== Read.DataEncodings Test Started Run #1 at 12:14:06 for http/Sign/Basic256Sha256/XML ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (5883ms) at 12:14:12 for http/Sign/Basic256Sha256/XML ==========
+
+========== Read.ReadWrite Test Started Run #1 at 12:14:12 for http/Sign/Basic256Sha256/XML ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (11775ms) at 12:14:23 for http/Sign/Basic256Sha256/XML ==========
+
+========== Write.RandomValues Test Started Run #1 at 12:14:23 for http/Sign/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (99ms) at 12:14:23 for http/Sign/Basic256Sha256/XML ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 12:14:24 for http/Sign/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (74ms) at 12:14:24 for http/Sign/Basic256Sha256/XML ==========
+
+========== Call.MethodTest Test Started Run #1 at 12:14:24 for http/Sign/Basic256Sha256/XML ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (1098ms) at 12:14:25 for http/Sign/Basic256Sha256/XML ==========
+
+========== Call.Errors Test Started Run #1 at 12:14:25 for http/Sign/Basic256Sha256/XML ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (1524ms) at 12:14:26 for http/Sign/Basic256Sha256/XML ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 12:14:26 for http/Sign/Basic256Sha256/XML ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (975ms) at 12:14:27 for http/Sign/Basic256Sha256/XML ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 12:14:27 for http/Sign/Basic256Sha256/XML ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (5835ms) at 12:14:33 for http/Sign/Basic256Sha256/XML ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 12:14:33 for http/Sign/Basic256Sha256/XML ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+6 publish responses received. Publishing Enabled = True
+17 publish responses received. Publishing Enabled = False
+24 publish responses received. Publishing Enabled = True
+29 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31292ms) at 12:15:04 for http/Sign/Basic256Sha256/XML ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 12:15:04 for http/Sign/Basic256Sha256/XML ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+30 publish responses received. Publishing Interval = 1000
+39 publish responses received. Publishing Interval = 2000
+64 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31238ms) at 12:15:36 for http/Sign/Basic256Sha256/XML ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 12:15:36 for http/Sign/Basic256Sha256/XML ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83462ms) at 12:16:59 for http/Sign/Basic256Sha256/XML ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 12:16:59 for http/Sign/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (86ms) at 12:16:59 for http/Sign/Basic256Sha256/XML ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 12:16:59 for http/Sign/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (91ms) at 12:16:59 for http/Sign/Basic256Sha256/XML ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 12:16:59 for http/Sign/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (80ms) at 12:16:59 for http/Sign/Basic256Sha256/XML ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 12:17:00 for http/Sign/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (87ms) at 12:17:00 for http/Sign/Basic256Sha256/XML ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 12:17:00 for http/Sign/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (108ms) at 12:17:00 for http/Sign/Basic256Sha256/XML ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 12:17:00 for http/Sign/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (86ms) at 12:17:00 for http/Sign/Basic256Sha256/XML ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 294941ms.
+Completed test for Endpoint. http/Sign/Basic256Sha256/XML
+
+Starting test for Endpoint. http/SignAndEncrypt/Basic256Sha256/Binary
+Creating new Session with URL = http://192.168.10.211:1234/ServerCmd/Basic256Sha256/SignAndEncrypt
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 12:17:01 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+6 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+9 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15432ms) at 12:17:17 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 12:17:17 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (14773ms) at 12:17:31 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 12:17:31 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (32302ms) at 12:18:04 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 12:18:04 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (9771ms) at 12:18:14 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.NodeClass Test Started Run #1 at 12:18:14 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (16555ms) at 12:18:30 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 12:18:30 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (29358ms) at 12:18:59 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Read.Attributes Test Started Run #1 at 12:19:00 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (853ms) at 12:19:00 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Read.IndexRanges Test Started Run #1 at 12:19:00 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (70ms) at 12:19:00 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Read.DataEncodings Test Started Run #1 at 12:19:00 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (1453ms) at 12:19:02 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Read.ReadWrite Test Started Run #1 at 12:19:02 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (2235ms) at 12:19:04 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Write.RandomValues Test Started Run #1 at 12:19:04 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (114ms) at 12:19:04 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 12:19:04 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (83ms) at 12:19:04 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Call.MethodTest Test Started Run #1 at 12:19:04 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (831ms) at 12:19:05 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Call.Errors Test Started Run #1 at 12:19:05 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (1188ms) at 12:19:07 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 12:19:07 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (718ms) at 12:19:07 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 12:19:07 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (4728ms) at 12:19:12 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 12:19:12 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+7 publish responses received. Publishing Enabled = True
+17 publish responses received. Publishing Enabled = False
+24 publish responses received. Publishing Enabled = True
+29 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31366ms) at 12:19:43 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 12:19:43 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+32 publish responses received. Publishing Interval = 1000
+40 publish responses received. Publishing Interval = 2000
+64 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31273ms) at 12:20:15 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 12:20:15 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83458ms) at 12:21:38 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 12:21:38 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (146ms) at 12:21:38 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 12:21:38 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (144ms) at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (121ms) at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (133ms) at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (107ms) at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (128ms) at 12:21:39 for http/SignAndEncrypt/Basic256Sha256/Binary ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 279194ms.
+Completed test for Endpoint. http/SignAndEncrypt/Basic256Sha256/Binary
+
+Starting test for Endpoint. http/SignAndEncrypt/Basic256Sha256/XML
+Creating new Session with URL = http://192.168.10.211:1234/ServerCmd/Basic256Sha256/SignAndEncrypt
+Successfully created new Session.
+Fetched the known ReferenceTypes from the Server
+Fetched the known DataTypes from the Server
+
+========== Session.KeepAlive Test Started Run #1 at 12:21:41 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Setting keep alive interval to 500ms.
+10 keep alives received in 5000ms.
+Setting keep alive interval to 1000ms.
+7 keep alives received in 5000ms.
+Setting keep alive interval to 1500ms.
+9 keep alives received in 5000ms.
+========== Session.KeepAlive Test Success Run #1 (15484ms) at 12:21:56 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Browse.Hierarchical Test Started Run #1 at 12:21:56 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Browsing children of 'Root'. NodeId = i=84
+Browsing children of 'Objects'. NodeId = i=85
+Browsing children of 'Types'. NodeId = i=86
+Browsing children of 'Views'. NodeId = i=87
+HierarchicalBrowseTest found 1861 Nodes
+========== Browse.Hierarchical Test Success Run #1 (19712ms) at 12:22:16 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Browse.ReferenceType Test Started Run #1 at 12:22:16 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting ReferenceType for 1861 Nodes (100% Coverage)
+========== Browse.ReferenceType Test Success Run #1 (35694ms) at 12:22:52 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Browse.BrowseResultMask Test Started Run #1 at 12:22:52 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting BrowseResultMaskTest for 1861 Nodes (100% Coverage)
+========== Browse.BrowseResultMask Test Success Run #1 (10556ms) at 12:23:02 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Browse.NodeClass Test Started Run #1 at 12:23:02 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting NodeClassTest for 1861 Nodes (100% Coverage)
+========== Browse.NodeClass Test Success Run #1 (21439ms) at 12:23:24 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Browse.BrowseNext Test Started Run #1 at 12:23:24 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting BrowseNextTest for 1861 Nodes (100% Coverage).
+========== Browse.BrowseNext Test Success Run #1 (38494ms) at 12:24:02 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Read.Attributes Test Started Run #1 at 12:24:02 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting ReadTest for 1861 Nodes
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Read 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.Attributes Test Failed Run #1 (4353ms) at 12:24:07 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Read.IndexRanges Test Started Run #1 at 12:24:07 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting ReadIndexRangeTest for 1861 Nodes
+IndexRange not valid for non-value attributes 'Boolean'. NodeId = i=1, Attribute = NodeId, StatusCode = BadIndexRangeNoData
+========== Read.IndexRanges Test Failed Run #1 (182ms) at 12:24:07 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Read.DataEncodings Test Started Run #1 at 12:24:07 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting ReadDataEncodingTest for 1861 Nodes
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Read 17204 attribute values for 391 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+========== Read.DataEncodings Test Failed Run #1 (8349ms) at 12:24:15 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Read.ReadWrite Test Started Run #1 at 12:24:15 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting ReadWriteTest for 1861 Nodes
+Wrote 33795 attribute values for 384 nodes.
+Wrote 33800 attribute values for 384 nodes.
+Wrote 33815 attribute values for 384 nodes.
+Wrote 33857 attribute values for 384 nodes.
+Wrote 28726 attribute values for 325 nodes.
+========== Read.ReadWrite Test Success Run #1 (16263ms) at 12:24:32 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Write.RandomValues Test Started Run #1 at 12:24:32 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.RandomValues Test Success Run #1 (123ms) at 12:24:32 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Write.TypeMismatch Test Started Run #1 at 12:24:32 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== Write.TypeMismatch Test Success Run #1 (120ms) at 12:24:32 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Call.MethodTest Test Started Run #1 at 12:24:32 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting CallTest for 0 Methods
+========== Call.MethodTest Test Success Run #1 (1290ms) at 12:24:33 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Call.Errors Test Started Run #1 at 12:24:33 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Found for 25 Methods to Call
+Found for 50 Methods to Call
+Found for 75 Methods to Call
+Found for 100 Methods to Call
+Starting CallTest for 105 Methods
+Called 105 methods 412 times.
+========== Call.Errors Test Success Run #1 (1759ms) at 12:24:35 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== TranslatePath.SingleHop Test Started Run #1 at 12:24:35 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting TranslatePath with 1 hops for 1861 Nodes (100% Coverage)
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 1503 browse paths.
+Translated 863 browse paths.
+========== TranslatePath.SingleHop Test Success Run #1 (1216ms) at 12:24:36 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== TranslatePath.MultiHop Test Started Run #1 at 12:24:36 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting TranslatePath with 4 hops for 1861 Nodes (100% Coverage)
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 4509 browse paths.
+Translated 2899 browse paths.
+========== TranslatePath.MultiHop Test Success Run #1 (6876ms) at 12:24:43 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Subscribe.KeepAlive Test Started Run #1 at 12:24:43 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting KeepAliveTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+7 publish responses received. Publishing Enabled = True
+17 publish responses received. Publishing Enabled = False
+24 publish responses received. Publishing Enabled = True
+29 publish responses received. Publishing Enabled = False
+37 publish responses received. Publishing Enabled = True
+46 publish responses received. Publishing Enabled = False
+Deleted subscriptions.
+========== Subscribe.KeepAlive Test Success Run #1 (31347ms) at 12:25:15 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Subscribe.PublishingInterval Test Started Run #1 at 12:25:15 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting PublishingIntervalTest. PipelineDepth = 10, OutstandingRequests = 0
+Created 10 subscriptions.
+32 publish responses received. Publishing Interval = 1000
+40 publish responses received. Publishing Interval = 2000
+64 publish responses received. Publishing Interval = 1000
+Deleted subscriptions.
+========== Subscribe.PublishingInterval Test Success Run #1 (31288ms) at 12:25:46 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== Subscribe.CreateItems Test Started Run #1 at 12:25:46 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+Starting CreateItemsTest for 1861 Nodes (100% Coverage). PipelineDepth = 10, OutstandingRequests = 0
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Subscribed to 9108 attribute values for 414 nodes.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+WARNING: CreateItemsTest failed. Trying it again do check for random timing errors.
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Value has incorrect data type for Node 'NamespacePublicationDate'. NodeId = i=15185, DataType = i=13, ValueRank = -1, Value = 2016-04-15
+Deleted subscriptions.
+========== Subscribe.CreateItems Test Failed Run #1 (83585ms) at 12:27:09 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== MonitoredItem.SamplingInterval Test Started Run #1 at 12:27:09 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.SamplingInterval Test Success Run #1 (96ms) at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== MonitoredItem.ModifySamplingInterval Test Started Run #1 at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifySamplingInterval Test Success Run #1 (122ms) at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== MonitoredItem.QueueSize Test Started Run #1 at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.QueueSize Test Success Run #1 (146ms) at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== MonitoredItem.ModifyQueueSize Test Started Run #1 at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyQueueSize Test Success Run #1 (119ms) at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== MonitoredItem.Deadband Test Started Run #1 at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.Deadband Test Success Run #1 (92ms) at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+========== MonitoredItem.ModifyDeadband Test Started Run #1 at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+GetWriteableVariables found 0 Variables
+WARNING: No writeable variables found.
+This test requires that a Server provide writeable variables
+which do not change unless written to. The test client application
+looks for Nodes within the set of Nodes returned in the Browse/Hierarchial Test
+that have a BrowseName of static or are specified in the writeable variables list.
+Any variables found as direct or indirect children of these Nodes are assumed to behave as required.
+========== MonitoredItem.ModifyDeadband Test Success Run #1 (110ms) at 12:27:10 for http/SignAndEncrypt/Basic256Sha256/XML ==========
+
+WARNING: 4 tests failed. 25 tests run. Total Time = 331174ms.
+Completed test for Endpoint. http/SignAndEncrypt/Basic256Sha256/XML
+
+WARNING: 36 tests failed. 225 tests run.

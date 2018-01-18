@@ -1,0 +1,10 @@
+bin
+obj
+*.suo
+*.user
+/Debug/Logs
+/Debug
+/packages
+*.pdf
+*.xlsx
+/.vs
